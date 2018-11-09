@@ -1312,3 +1312,85 @@ section
 {
 	color: #ff4444;
 }
+
+.work-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  margin-bottom: 40px; }
+  .work-flex .half {
+    display: block;
+    width: 50%;
+    height: 450px; }
+    .work-flex .half .display-t {
+      height: 450px;
+      display: table; }
+      @media screen and (max-width: 480px) {
+        .work-flex .half .display-t {
+          display: block;
+          height: auto; } }
+    .work-flex .half .display-tc {
+      display: table-cell;
+      vertical-align: middle; }
+    .work-flex .half .desc {
+      padding: 0 3em;
+      background: #fff; }
+      @media screen and (max-width: 768px) {
+        .work-flex .half .desc {
+          padding: 3em; } }
+      .work-flex .half .desc h2 {
+        font-weight: 400; }
+        .work-flex .half .desc h2 a {
+          color: #303133; }
+    @media screen and (max-width: 480px) {
+      .work-flex .half {
+        width: 100%; } }
+  .work-flex .work-img {
+    display: block;
+    height: 450px; }
+
+.work-grid {
+  margin-bottom: 40px; }
+  .work-grid .work-img {
+    display: block;
+    height: 270px;
+    position: relative; }
+    .work-grid .work-img .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 270px;
+      content: '';
+      display: table;
+      text-align: center;
+      background: #4aca85;
+      opacity: 0;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .work-grid .work-img .icon i {
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 20px; }
+    .work-grid .work-img:hover .icon, .work-grid .work-img:focus .icon {
+      opacity: 1; }
+  .work-grid .desc {
+    background: #fff;
+    padding: 25px; }
+    .work-grid .desc h2 {
+      font-size: 24px; }
+      .work-grid .desc h2 a {
+        color: #303133; }
+        .work-grid .desc h2 a:hover {
+          color: #4aca85; }
